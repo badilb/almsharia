@@ -15,7 +15,7 @@ const translations = {
         't_ftth': 'Архитектура «оптика до дома». Низкие потери сигнала и высочайшая надежность сети.',
         't_blow': 'Скорость прокладки до 100 м/мин. Строительная длина до 10 км без разрывов.',
         'th_city': 'Город / Регион', 'th_res': 'Объем выполненных работ',
-        'copy': '© 2025 ТОО «Almsharia». Все права защищены.'
+        'copy': '© ТОО «Almsharia». Все права защищены.'
     },
     'kz': {
         'nav_about': 'Компания туралы', 'nav_services': 'Қызметтер', 'nav_tech': 'Технологиялар', 'nav_projects': 'Жобалар', 'nav_contacts': 'Контактілер',
@@ -33,7 +33,7 @@ const translations = {
         't_ftth': '«Үйге дейін оптика» архитектурасы. Төмен сигнал жоғалуы және желінің жоғары сенімділігі.',
         't_blow': 'Төсеу жылдамдығы 100 м/мин дейін. Үзіліссіз құрылыс ұзындығы 10 км-ге дейін.',
         'th_city': 'Қала / Аймақ', 'th_res': 'Орындалған жұмыс көлемі',
-        'copy': '© 2025 «Almsharia» ЖШС. Барлық құқықтар қорғалған.'
+        'copy': '© «Almsharia» ЖШС. Барлық құқықтар қорғалған.'
     },
     'en': {
         'nav_about': 'About', 'nav_services': 'Services', 'nav_tech': 'Technologies', 'nav_projects': 'Projects', 'nav_contacts': 'Contacts',
@@ -51,7 +51,7 @@ const translations = {
         't_ftth': '"Fiber to the Home" architecture. Low signal loss and exceptional network reliability.',
         't_blow': 'Laying speed up to 100 m/min. Build length up to 10 km without breaks.',
         'th_city': 'City / Region', 'th_res': 'Scope of Work Completed',
-        'copy': '© 2025 Almsharia LLP. All rights reserved.'
+        'copy': '© Almsharia LLP. All rights reserved.'
     }
 };
 
@@ -70,4 +70,5 @@ function changeLang(lang) {
 document.addEventListener('DOMContentLoaded', () => {
     const saved = localStorage.getItem('alm_lang') || 'ru';
     changeLang(saved);
+
 });
