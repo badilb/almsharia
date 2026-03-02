@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALMSHARIA | Проектирование и строительство ВОЛС</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-container">
+            <img src="logo_almsharia_lg.png" alt="Almsharia" class="nav-logo-img">
+            <ul class="nav-links">
+                <li><a href="#about" data-key="nav_about">О компании</a></li>
+                <li><a href="#services" data-key="nav_services">Услуги</a></li>
+                <li><a href="#tech" data-key="nav_tech">Технологии</a></li>
+                <li><a href="#projects" data-key="nav_projects">Проекты</a></li>
+                <li><a href="#contacts" data-key="nav_contacts">Контакты</a></li>
+                <li class="lang-switch">
+                    <span onclick="changeLang('ru')" id="btn-ru" class="lang-link active">RU</span> | 
+                    <span onclick="changeLang('kz')" id="btn-kz" class="lang-link">KZ</span> | 
+                    <span onclick="changeLang('en')" id="btn-en" class="lang-link">EN</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 data-key="hero_title">Надежный партнер в создании современных ВОЛС</h1>
+            <p data-key="hero_desc">Создание инфраструктуры для высокоскоростного доступа к интернету для бизнеса и населения.</p>
+            <div class="hero-stats">
+                <div class="stat-item"><span class="stat-num">510+</span><p data-key="stat_km">км кабеля ВОЛС</p></div>
+                <div class="stat-item"><span class="stat-num">27k+</span><p data-key="stat_ports">портов GPON</p></div>
+                <div class="stat-item"><span class="stat-num">157</span><p data-key="stat_bs">БС 5G подключено</p></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2 data-key="nav_about">О компании</h2>
+            <p class="mission" data-key="mission_text">Наша миссия — создание современной телекоммуникационной инфраструктуры, обеспечивающей высокоскоростной доступ к интернету и цифровым услугам.</p>
+            <div class="grid-3">
+                <div class="card">
+                    <i class="fas fa-file-contract"></i>
+                    <h3 data-key="ab_lic_t">Лицензии</h3>
+                    <p data-key="ab_lic_d">Изыскательская, проектная и строительно-монтажная деятельность всех категорий.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-globe-asia"></i>
+                    <h3 data-key="ab_geo_t">География</h3>
+                    <p data-key="ab_geo_d">Алматы, Конаев, Тараз, Талдыкорган и Алматинская область.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-user-check"></i>
+                    <h3 data-key="ab_exp_t">Компетентность</h3>
+                    <p data-key="ab_exp_d">Специалисты с многолетним опытом и современный парк оборудования.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="alt-bg">
+        <div class="container">
+            <h2 data-key="nav_services">Комплекс услуг</h2>
+            <div class="grid-2">
+                <div class="service-group">
+                    <h3 data-key="s_pro_t">Проектирование и изыскания</h3>
+                    <ul data-key="s_pro_l">
+                        <li>Разработка ТЗ и обследование трассы</li>
+                        <li>Создание проектной документации</li>
+                        <li>Сметный расчет и подбор оборудования</li>
+                        <li>Прохождение экспертизы проектов</li>
+                    </ul>
+                </div>
+                <div class="service-group">
+                    <h3 data-key="s_smr_t">Строительно-монтажные работы</h3>
+                    <ul data-key="s_smr_l">
+                        <li>Прокладка кабеля методом пневмозадувки</li>
+                        <li>Горизонтально-направленное бурение (ГНБ)</li>
+                        <li>Сварка и сращивание оптических волокон</li>
+                        <li>Тестирование и измерение потерь (OTDR)</li>
+                    </ul>
+                </div>
+                <div class="service-group">
+                    <h3 data-key="s_sup_t">Поставка и сопровождение</h3>
+                    <ul data-key="s_sup_l">
+                        <li>Поставка кабелей, ЗПТ и муфт</li>
+                        <li>Настройка активного оборудования</li>
+                        <li>Авторский надзор за строительством</li>
+                        <li>Аварийное восстановление и техподдержка</li>
+                    </ul>
+                </div>
+                <div class="service-group steps-box">
+                    <h3 data-key="steps_t">Начните проект с нами</h3>
+                    <div class="steps-grid">
+                        <div><span>1</span> Консультация</div>
+                        <div><span>2</span> Обследование</div>
+                        <div><span>3</span> Предложение</div>
+                        <div><span>4</span> Реализация</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tech">
+        <div class="container">
+            <h2 data-key="nav_tech">Технологии и оборудование</h2>
+            <div class="grid-3">
+                <div class="tech-card">
+                    <h3>GPON</h3>
+                    <p data-key="t_gpon">До 2,5 Гбит/с downstream и 1,25 Гбит/с upstream. Максимальная скорость для каждого абонента.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>FTTH</h3>
+                    <p data-key="t_ftth">Архитектура «оптика до дома». Низкие потери сигнала и высочайшая надежность сети.</p>
+                </div>
+                <div class="tech-card">
+                    <h3>Пневмозадувка</h3>
+                    <p data-key="t_blow">Скорость прокладки до 100 м/мин. Строительная длина до 10 км без разрывов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="alt-bg">
+        <div class="container">
+            <h2 data-key="nav_projects">Реализованные проекты</h2>
+            <div class="project-table">
+                <table>
+                    <thead>
+                        <tr><th data-key="th_city">Город / Регион</th><th data-key="th_res">Объем выполненных работ</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Алматы</td><td>122 БС 5G + сети GPON/FTTH (510+ км кабеля)</td></tr>
+                        <tr><td>Талдыкорган</td><td>19 БС 5G (Каналы связи)</td></tr>
+                        <tr><td>Конаев</td><td>10 БС 5G (Каналы связи)</td></tr>
+                        <tr><td>Тараз</td><td>6 БС 5G (Каналы связи)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="client-banner">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts">
+        <div class="container footer-grid">
+            <div class="footer-contacts">
+                <h3 data-key="nav_contacts">Контакты</h3>
+                <p><i class="fas fa-map-marker-alt"></i> г. Алматы, ул. Ауэзова 60, кв. 29</p>
+                <p><i class="fas fa-envelope"></i> almsharia02@gmail.com</p>
+            </div>
+            <div class="footer-brand">
+                <div class="logo">ALMSHARIA</div>
+                <p data-key="copy">©ТОО «Almsharia». Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
